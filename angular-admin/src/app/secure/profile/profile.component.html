@@ -1,0 +1,32 @@
+<h3>Account Information</h3>
+<form [formGroup]="infoForm" (submit)="infoSubmit()">
+  <div class="mb-3">
+    <label for="first_name">First Name</label>
+    <input type="text" class="form-control" name="first_name" formControlName="first_name" id="first_name">
+  </div>
+  <div class="mb-3">
+    <label for="last_name">Last Name</label>
+    <input type="text" class="form-control" name="last_name" formControlName="last_name" id="last_name">
+  </div>
+  <div class="mb-3">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" name="email" formControlName="email" id="email">
+  </div>
+
+  <button type="submit" class="btn btn-outline-secondary">Save</button>
+</form>
+
+<h3>Change Password</h3>
+<form [formGroup]="passwordForm" (submit)="passwordSubmit()">
+  <div class="mb-3">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" name="password" formControlName="password" id="password">
+  </div>
+
+  <div class="mb-3">
+    <label for="password_confirmation">Password Confirm</label>
+    <input type="password" class="form-control" name="password_confirmation" formControlName="password_confirmation" id="password_confirmation">
+  </div>
+
+  <button type="submit" class="btn btn-outline-secondary">Save</button>
+</form>

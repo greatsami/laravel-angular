@@ -1,0 +1,11 @@
+<main class="form-signin">
+  <form [formGroup]="form" (submit)="submit()">
+    <h1 class="h3 mb-3 fw-normal">Please Sign in</h1>
+
+    <input type="email" formControlName="email" name="email" class="form-control" placeholder="name@example.com" required>
+
+    <input type="password" formControlName="password" name="password" class="form-control" placeholder="Password" required>
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+  </form>
+</main>
